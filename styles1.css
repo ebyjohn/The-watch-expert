@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+h1 {
+  color: rgb(243, 236, 236);
+  width: 20%;
+  font-family: Neue Haas Grotesk, sans-serif;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  margin-left: 30px;
+  margin-top: 100px;
+  font-size: 40px;
+}
+header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30 px 10%;
+  background: rgba(0, 0, 0, 0);
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+nav li a:hover {
+  color: #ffffff;
+  transition: all 0.4s ease 0s;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: Interstate, sans-serif;
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  padding: 0;
+}
+a:after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+a:hover:after {
+  width: 100%;
+}
+div {
+  display: flex;
+}
+.p{
+  font-family: 'Crimson Text', serif;
+  color: #ffffff;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-top: 60px;
+  font-size: 50;
+}
+.p1{
+  font-family: 'Crimson Text', serif;
+  color: #ffffff;
+  margin-top: 170px;
+  margin-left: 200px;
+  font-size: 50;
+  text-align: left;
+}
+body::-webkit-scrollbar {
+  width: 0.2em;
+  background-color: transparent;
+}
+
